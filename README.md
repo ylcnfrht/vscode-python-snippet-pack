@@ -653,6 +653,10 @@ Users appreciate release notes as you update your extension.
 
 Initial release of python code snippets
 
+### 1.0.1
+
+Initial release of python code snippets
+
 
 -----------------------------------------------------------------------------------------------------------
 

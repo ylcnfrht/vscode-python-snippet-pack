@@ -1,8 +1,8 @@
 {
     "name": "pythonsnippets",
-    "displayName": "python code snippets",
+    "displayName": "python snippets",
     "description": "Code snippets for python",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "frhtylcn",
     "repository": {
         "type": "git",
