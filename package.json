@@ -1,0 +1,24 @@
+{
+    "name": "pythonsnippets",
+    "displayName": "python code snippets",
+    "description": "Code snippets for python",
+    "version": "1.0.0",
+    "publisher": "frhtylcn",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ylcnfrht/vscode-python-snippet-pack"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "python",
+            "path": "./snippets/python_snippets.json"
+        }]
+    }
+}
