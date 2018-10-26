@@ -2,13 +2,13 @@
 
 #### A snippet pack to make you more productive working with python
 
-#### This snippet pack contains all below python method 
-*  all python built-in snippets and contains at least one example for each method for each method 
-*  all python string snippets contains at least one example for each method for each method 
-*  all python list snippets contains at least one example for each method for each method 
-*  all python sets snippets contains at least one example for each method for each method 
-*  all python tuple snippets contains at least one example for each method for each method 
-*  all python dictionary snippets contains at least one example for each method for each method 
+#### This snippet pack contains all below python method
+*  all python built-in snippets and contains at least one example for each method
+*  all python string snippets contains at least one example for each method
+*  all python list snippets contains at least one example for each method
+*  all python sets snippets contains at least one example for each method
+*  all python tuple snippets contains at least one example for each method
+*  all python dictionary snippets contains at least one example for each method
 *  And contains a lot of other code snippets (like if/else, for, while, while/else, try/catch,file process and
 *  class snippets and class examples for oop(polymorphism,encapsulation,inheritance .i.g)
 
@@ -653,9 +653,9 @@ Users appreciate release notes as you update your extension.
 
 Initial release of python code snippets
 
-### 1.0.1
+### 1.0.2
 
-Initial release of python code snippets
+Updated README.md
 
 
 -----------------------------------------------------------------------------------------------------------
