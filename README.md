@@ -553,6 +553,7 @@
 
 &nbsp; &nbsp; &nbsp;
 &nbsp; &nbsp; &nbsp;
+
 | List Comprehensions code examples | Description |
 | --- | --- |
 | list.comp=>_1 | An example for using list comprehension |
