@@ -98,7 +98,7 @@
     "prefix": "built_in.any=>list_1",
     "body": [
       "mylist = [False, True, False]",
-      "x = ant(mylist)",
+      "x = any(mylist)",
       "print(x)",
       "",
       "# Return True"
