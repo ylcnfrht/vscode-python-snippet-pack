@@ -892,8 +892,8 @@
   "built_in.open=>": {
     "prefix": "built_in.open=>",
     "body": [
-      "f = open('demofile.txt', 'r')",
-      "print(f.read())"
+      "with open('demofile.txt', 'r') as f:",
+      "  print(f.read())"
     ],
     "description": "An example for using open"
   },
@@ -3508,32 +3508,32 @@
   "openFile": {
     "prefix": "file=>openFile",
     "body": [
-      "f = open('demofile.txt', 'r')",
-      "print(f.read())"
+      "with open('demofile.txt', 'r') as f:",
+      "  print(f.read())"
     ],
     "description": "open a file"
   },
   "openFileReadLine": {
     "prefix": "file=>openFileReadLine",
     "body": [
-      "f = open('demofile.txt', 'r')",
-      "print(f.readline())"
+      "with open('demofile.txt', 'r') as f:",
+      "  print(f.readline())"
     ],
     "description": "Read one line of the file"
   },
   "writeExistFile": {
     "prefix": "file=>writeExistFile",
     "body": [
-      "f = open('demofile.txt', 'a')",
-      "f.write('Now the file has one more line!')"
+      "with open('demofile.txt', 'a') as f:",
+      "  f.write('Now the file has one more line!')"
     ],
     "description": "Write to an Existing File"
   },
   "writeOwerWrite": {
     "prefix": "file=>writeOwerWrite",
     "body": [
-      "f = open('demofile.txt', 'w')",
-      "f.write('Woops! I have deleted the content!')"
+      "with open('demofile.txt', 'w') as f:",
+      "  f.write('Woops! I have deleted the content!')"
     ],
     "description": "Open a file and overwrite the content"
   },
