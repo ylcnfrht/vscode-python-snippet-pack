@@ -893,7 +893,7 @@
     "prefix": "built_in.open=>",
     "body": [
       "with open('demofile.txt', 'r') as f:",
-      "    print(f.read())"
+      "  print(f.read())"
     ],
     "description": "An example for using open"
   },
@@ -3509,7 +3509,7 @@
     "prefix": "file=>openFile",
     "body": [
       "with open('demofile.txt', 'r') as f:",
-      "    print(f.read())"
+      "  print(f.read())"
     ],
     "description": "open a file"
   },
@@ -3517,7 +3517,7 @@
     "prefix": "file=>openFileReadLine",
     "body": [
       "with open('demofile.txt', 'r') as f:",
-      "    print(f.readline())"
+      "  print(f.readline())"
     ],
     "description": "Read one line of the file"
   },
@@ -3525,7 +3525,7 @@
     "prefix": "file=>writeExistFile",
     "body": [
       "with open('demofile.txt', 'a') as f:",
-      "    f.write('Now the file has one more line!')"
+      "  f.write('Now the file has one more line!')"
     ],
     "description": "Write to an Existing File"
   },
@@ -3533,7 +3533,7 @@
     "prefix": "file=>writeOwerWrite",
     "body": [
       "with open('demofile.txt', 'w') as f:",
-      "    f.write('Woops! I have deleted the content!')"
+      "  f.write('Woops! I have deleted the content!')"
     ],
     "description": "Open a file and overwrite the content"
   },
