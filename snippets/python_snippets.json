@@ -3468,6 +3468,14 @@
     ],
     "description": "__iter__ method"
   },
+  "if __name__": {
+    "prefix": "if __name__=>",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "  "
+    ],
+    "description": "if name equals main"
+  },
   "__next__": {
     "prefix": "__next__=>",
     "body": [
