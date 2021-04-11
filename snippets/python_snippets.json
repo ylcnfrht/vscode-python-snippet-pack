@@ -3472,7 +3472,7 @@
     "prefix": "if __name__=>",
     "body": [
       "if __name__ == \"__main__\":",
-      "  "
+      "\t"
     ],
     "description": "if name equals main"
   },
