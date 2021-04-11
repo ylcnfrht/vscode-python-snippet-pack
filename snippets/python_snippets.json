@@ -268,9 +268,9 @@
     "prefix": "built_in.delattr=>_1",
     "body": [
       "class Person:",
-      " name = 'John'",
-      " age = 36",
-      " country = 'Norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'Norway'",
       "",
       "delattr(Person, 'age')",
       "# The Person object will no longer contain an age property"
@@ -299,9 +299,9 @@
     "prefix": "built_in.dir=>",
     "body": [
       "class Person:",
-      " name = 'John'",
-      " age = 36",
-      " country = 'Norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'Norway'",
       "print(dir(Person))"
     ],
     "description": "An example for using dict"
@@ -371,15 +371,15 @@
       "ages = [5, 12, 17, 18, 24, 32]",
       "",
       "def myFunc(x):",
-      " if x < 18:",
-      "   return False",
-      " else:",
-      "   return True",
+      "\tif x < 18:",
+      "\t\treturn False",
+      "\telse:",
+      "\t\treturn True",
       "",
       "adults = filter(myFunc, ages)",
       "",
       "for x in adults:",
-      " print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using filter"
   },
@@ -458,9 +458,9 @@
     "prefix": "built_in.frozenset=>_3",
     "body": [
       "class Person:",
-      " name = 'John'",
-      " age = 36",
-      " country = 'Norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'Norway'",
       "",
       "x = getattr(Person, 'age')",
       "",
@@ -498,9 +498,9 @@
     "prefix": "built_in.hasattr=>",
     "body": [
       "class Person:",
-      " name = 'John'",
-      " age = 36",
-      " country = 'Norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'Norway'",
       "",
       "x = hasattr(Person, 'age')",
       "",
@@ -617,7 +617,7 @@
     "prefix": "built_in.isinstance=>_3",
     "body": [
       "class myObj:",
-      " name = 'John'",
+      "\tname = 'John'",
       "",
       "y = myObj()",
       "",
@@ -635,13 +635,13 @@
     "prefix": "built_in.issubclass=>",
     "body": [
       "class myAge:",
-      " age = 36",
+      "\tage = 36",
       "",
       "class myObj(myAge):",
-      " name = 'John'",
-      " age = myAge",
+      "\tname = 'John'",
+      "\tage = myAge",
       "",
-      " x = issubclass(myObj, myAge)",
+      "\tx = issubclass(myObj, myAge)",
       "",
       "print(x)"
     ],
@@ -726,7 +726,7 @@
     "prefix": "built_in.map=>_1",
     "body": [
       "def myfunc(n):",
-      " return len(n)",
+      "\treturn len(n)",
       "",
       "x = map(myfunc, ('apple', 'banana', 'cherry'))",
       "",
@@ -738,7 +738,7 @@
     "prefix": "built_in.map=>_2",
     "body": [
       "def myfunc(a, b):",
-      " return a + b",
+      "\treturn a + b",
       "",
       "x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))",
       "",
@@ -959,15 +959,15 @@
     "prefix": "built_in.property=>",
     "body": [
       "class C:",
-      "    def __init__(self):",
-      "        self._x = None",
-      "    def getx(self):",
-      "        return self._x",
-      "    def setx(self, value):",
-      "        self._x = value",
-      "    def delx(self):",
-      "        del self._x",
-      "    x = property(getx, setx, delx, 'I'm the 'x' property.')"
+      "\tdef __init__(self):",
+      "\t\tself._x = None",
+      "\tdef getx(self):",
+      "\t\treturn self._x",
+      "\tdef setx(self, value):",
+      "\t\tself._x = value",
+      "\tdef delx(self):",
+      "\t\tdel self._x",
+      "\tx = property(getx, setx, delx, 'I'm the 'x' property.')"
     ],
     "description": "An example for using property"
   },
@@ -981,7 +981,7 @@
     "body": [
       "x = range(6)",
       "for n in x:",
-      "  print(n)"
+      "\tprint(n)"
     ],
     "description": "An example for using range"
   },
@@ -990,7 +990,7 @@
     "body": [
       "x = range(3, 6)",
       "for n in x:",
-      "  print(n)"
+      "\tprint(n)"
     ],
     "description": "An example for using range"
   },
@@ -999,7 +999,7 @@
     "body": [
       "x = range(3, 20, 2)",
       "for n in x:",
-      "  print(n)"
+      "\tprint(n)"
     ],
     "description": "An example for using range"
   },
@@ -1019,7 +1019,7 @@
       "alph = ['a', 'b', 'c', 'd']",
       "ralph = reversed(alph)",
       "for x in ralph:",
-      "  print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using reversed"
   },
@@ -1066,9 +1066,9 @@
     "prefix": "built_in.setattr=>",
     "body": [
       "class Person:",
-      "  name = 'John'",
-      "  age = 36",
-      "  country = 'Norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'Norway'",
       "setattr(Person, 'age', 40)",
       "# The age property will now have the value: 40",
       "x = getattr(Person, 'age')",
@@ -1230,9 +1230,9 @@
     "prefix": "built_in.vars=>",
     "body": [
       "class Person:",
-      "  name = 'John'",
-      "  age = 36",
-      "  country = 'norway'",
+      "\tname = 'John'",
+      "\tage = 36",
+      "\tcountry = 'norway'",
       "x = vars(Person)"
     ],
     "description": "An example for using vars"
@@ -1268,7 +1268,7 @@
     "prefix": "if",
     "body": [
       "if condition:",
-      "  pass"
+      "\tpass"
     ],
     "description": "if Statements"
   },
@@ -1276,9 +1276,9 @@
     "prefix": "ifelif",
     "body": [
       "if condition:",
-      "  pass",
+      "\tpass",
       "elif condition:",
-      "  pass"
+      "\tpass"
     ],
     "description": "if/else if Statements"
   },
@@ -1286,11 +1286,11 @@
     "prefix": "ifelifelse",
     "body": [
       "if condition:",
-      "  pass",
+      "\tpass",
       "elif condition:",
-      "  pass",
+      "\tpass",
       "else:",
-      "  pass"
+      "\tpass"
     ],
     "description": "if/else if/else Statements"
   },
@@ -1298,9 +1298,9 @@
     "prefix": "ifelse",
     "body": [
       "if condition:",
-      "  pass",
+      "\tpass",
       "else:",
-      "  pass"
+      "\tpass"
     ],
     "description": "if/else Statements"
   },
@@ -1308,7 +1308,7 @@
     "prefix": "else",
     "body": [
       "else:",
-      "  pass"
+      "\tpass"
     ],
     "description": "else Statements"
   },
@@ -1326,7 +1326,7 @@
     "prefix": "for",
     "body": [
       "for item in range:",
-      " "
+      "\t"
     ],
     "description": "for Statements"
   },
@@ -1335,7 +1335,7 @@
     "body": [
       "fruits = ['apple', 'banana', 'cherry']",
       "for x in fruits:",
-      "  print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1343,7 +1343,7 @@
     "prefix": "for=>through_a_string",
     "body": [
       "for x in 'banana':",
-      "  print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1352,9 +1352,9 @@
     "body": [
       "fruits = ['apple', 'banana', 'cherry']",
       "for x in fruits:",
-      " print(x)",
-      " if x == 'banana':",
-      "   break"
+      "\tprint(x)",
+      "\tif x == 'banana':",
+      "\t\tbreak"
     ],
     "description": "An example for using for"
   },
@@ -1363,10 +1363,10 @@
     "body": [
       "fruits = ['apple', 'banana', 'cherry']",
       "for x in fruits:",
-      " print(x)",
-      " if x == 'banana':",
-      "   continue",
-      " print(x)"
+      "\tprint(x)",
+      "\tif x == 'banana':",
+      "\t\tcontinue",
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1374,7 +1374,7 @@
     "prefix": "for=>range_function_1",
     "body": [
       "for x in range(6):",
-      " print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1382,7 +1382,7 @@
     "prefix": "for=>range_function_2",
     "body": [
       "for x in range(2, 6):",
-      " print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1390,7 +1390,7 @@
     "prefix": "for=>range_function_3",
     "body": [
       "for x in range(2, 30, 3):",
-      " print(x)"
+      "\tprint(x)"
     ],
     "description": "An example for using for"
   },
@@ -1398,9 +1398,9 @@
     "prefix": "for=>for_else",
     "body": [
       "for x in range(2, 6):",
-      " print(x)",
+      "\tprint(x)",
       "else:",
-      " print('Finally finished!')"
+      "\tprint('Finally finished!')"
     ],
     "description": "An example for using for"
   },
@@ -1410,8 +1410,8 @@
       "adj = ['red', 'big', 'tasty']",
       "fruits = ['apple', 'banana', 'cherry']",
       "for x in adj:",
-      "  for y in fruits:",
-      "    print(x, y)"
+      "\tfor y in fruits:",
+      "\t\tprint(x, y)"
     ],
     "description": "An example for using for"
   },
@@ -1419,7 +1419,7 @@
     "prefix": "while",
     "body": [
       "while expression:",
-      "  pass"
+      "\tpass"
     ],
     "description": "while Statements"
   },
@@ -1427,9 +1427,9 @@
     "prefix": "while_else",
     "body": [
       "while expression:",
-      "  pass",
+      "\tpass",
       "else:",
-      "  pass"
+      "\tpass"
     ],
     "description": "while Statements"
   },
@@ -1438,8 +1438,8 @@
     "body": [
       "i = 1",
       "while i < 6:",
-      "  print(i)",
-      "  i += 1"
+      "\tprint(i)",
+      "\ti += 1"
     ],
     "description": "while Statements"
   },
@@ -1448,10 +1448,10 @@
     "body": [
       "i = 1",
       "while i < 6:",
-      " print(i)",
-      "  if i == 3:",
-      "    break",
-      "  i += 1"
+      "\tprint(i)",
+      "\tif i == 3:",
+      "\t\tbreak",
+      "\ti += 1"
     ],
     "description": "while Statements"
   },
@@ -1460,11 +1460,11 @@
     "body": [
       "i = 1",
       "while i < 6:",
-      "  i += 1",
-      "  print(i)",
-      "  if i == 3:",
-      "    continue",
-      "  print(i)"
+      "\ti += 1",
+      "\tprint(i)",
+      "\tif i == 3:",
+      "\t\tcontinue",
+      "\tprint(i)"
     ],
     "description": "while Statements"
   },
@@ -1472,7 +1472,7 @@
     "prefix": "function=>",
     "body": [
       "def name(args):",
-      " pass"
+      "\tpass"
     ],
     "description": "Defining Function"
   },
@@ -1480,7 +1480,7 @@
     "prefix": "def=>",
     "body": [
       "def name(args):",
-      " pass"
+      "\tpass"
     ],
     "description": "Defining Function"
   },
@@ -1488,7 +1488,7 @@
     "prefix": "def=>with_default_value",
     "body": [
       "def name(name, lastName='john')",
-      " pass"
+      "\tpass"
     ],
     "description": "Defining Function wqith default values"
   },
@@ -2754,7 +2754,7 @@
     "body": [
       "# A function that returns the length of the value:",
       "def myFunc(e):",
-      "  return len(e)",
+      "\treturn len(e)",
       "cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']",
       "cars.sort(key=myFunc)",
       "print(cars)"
@@ -2766,7 +2766,7 @@
     "body": [
       "# A function that returns the length of the value:",
       "def myFunc(e):",
-      "  return len(e)",
+      "\treturn len(e)",
       "cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']",
       "cars.sort(reverse=True, key=myFunc)",
       "print(cars)"
@@ -2829,9 +2829,9 @@
     "prefix": "dictionary.clear=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "car.clear()",
       "print(car)"
@@ -2847,9 +2847,9 @@
     "prefix": "dictionary.copy=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.copy()",
       "print(x)"
@@ -2889,9 +2889,9 @@
     "prefix": "dictionary.get=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.get('model')",
       "print(x)"
@@ -2902,9 +2902,9 @@
     "prefix": "dictionary.get=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.get('price', 15000)",
       "print(x)"
@@ -2920,9 +2920,9 @@
     "prefix": "dictionary.items=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.items()",
       "print(x)"
@@ -2933,9 +2933,9 @@
     "prefix": "dictionary.items=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.items()",
       "car['year'] = 2018",
@@ -2952,9 +2952,9 @@
     "prefix": "dictionary.keys=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.keys()",
       "print(x)"
@@ -2965,9 +2965,9 @@
     "prefix": "dictionary.keys=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.keys()",
       "car['color'] = 'white'",
@@ -2984,9 +2984,9 @@
     "prefix": "dictionary.pop=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "car.pop('model')",
       "print(car)"
@@ -3002,9 +3002,9 @@
     "prefix": "dictionary.popitem=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "car.popitem()",
       "print(car)"
@@ -3020,9 +3020,9 @@
     "prefix": "dictionary.setdefault=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.setdefault('model', 'Bronco')",
       "print(x)"
@@ -3033,9 +3033,9 @@
     "prefix": "dictionary.setdefault=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.setdefault('color', 'white')",
       "print(x)"
@@ -3051,9 +3051,9 @@
     "prefix": "dictionary.update=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "car.update({'color': 'White'})",
       "print(car)"
@@ -3069,9 +3069,9 @@
     "prefix": "dictionary.values=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.values()",
       "print(x)"
@@ -3082,9 +3082,9 @@
     "prefix": "dictionary.values=>",
     "body": [
       "car = {",
-      "  'brand': 'Ford',",
-      "  'model': 'Mustang',",
-      "  'year': 1964",
+      "\t'brand': 'Ford',",
+      "\t'model': 'Mustang',",
+      "\t'year': 1964",
       "}",
       "x = car.values()",
       "car['year'] = 2018",
@@ -3446,7 +3446,7 @@
     "prefix": "class=>",
     "body": [
       "class MyClass:",
-      "  pass"
+      "\tpass"
     ],
     "description": "python class"
   },
@@ -3454,8 +3454,8 @@
     "prefix": "__init__=>",
     "body": [
       "def __init__(self, name, age):",
-      "  self.name = name",
-      "  self.age = age"
+      "\tself.name = name",
+      "\tself.age = age"
     ],
     "description": "__init__ method"
   },
@@ -3463,8 +3463,8 @@
     "prefix": "__iter__=>",
     "body": [
       "def __iter__(self):",
-      "  self.a = 1",
-      "  return self"
+      "\tself.a = 1",
+      "\treturn self"
     ],
     "description": "__iter__ method"
   },
@@ -3472,9 +3472,9 @@
     "prefix": "__next__=>",
     "body": [
       "def __next__(self):",
-      "  x = self.a",
-      "  self.a += 1",
-      "  return x"
+      "\tx = self.a",
+      "\tself.a += 1",
+      "\treturn x"
     ],
     "description": "__next__ method"
   },
@@ -3487,9 +3487,9 @@
     "prefix": "trye=>",
     "body": [
       "try:",
-      "  print(x)",
+      "\tprint(x)",
       "except:",
-      "  print('An exception occurred')"
+      "\tprint('An exception occurred')"
     ],
     "description": "tryexcept method"
   },
@@ -3497,11 +3497,11 @@
     "prefix": "tryef=>",
     "body": [
       "try:",
-      "  print(x)",
+      "\tprint(x)",
       "except:",
-      "  print('Something went wrong')",
+      "\tprint('Something went wrong')",
       "finally:",
-      "  print('The try except is finished')"
+      "\tprint('The try except is finished')"
     ],
     "description": "tryexceptfinally method"
   },
@@ -3559,7 +3559,7 @@
     "prefix": "class=>_1",
     "body": [
       "class Person:",
-      "    pass  # An empty block",
+      "\tpass  # An empty block",
       "p = Person()",
       "print(p)"
     ],
@@ -3570,28 +3570,28 @@
     "body": [
       "class Bird:",
       "",
-      "   def __init__(self):",
-      "     print('Bird is ready')",
+      "\tdef __init__(self):",
+      "\t\tprint('Bird is ready')",
       "",
-      "   def whoisThis(self):",
-      "     print('Bird')",
+      "\tdef whoisThis(self):",
+      "\t\tprint('Bird')",
       "",
-      "   def swim(self):",
-      "     print('Swim faster')",
+      "\tdef swim(self):",
+      "\t\tprint('Swim faster')",
       "",
       "# child class",
       "class Penguin(Bird):",
       "",
-      "   def __init__(self):",
-      "     # call super() function",
-      "     super().__init__()",
-      "     print('Penguin is ready')",
+      "\tdef __init__(self):",
+      "\t\t# call super() function",
+      "\t\tsuper().__init__()",
+      "\t\tprint('Penguin is ready')",
       "",
-      "   def whoisThis(self):",
-      "     print('Penguin')",
+      "\tdef whoisThis(self):",
+      "\t\tprint('Penguin')",
       "",
-      "   def run(self):",
-      "     print('Run faster')",
+      "\tdef run(self):",
+      "\t\tprint('Run faster')",
       "",
       "peggy = Penguin()",
       "peggy.whoisThis()",
@@ -3604,40 +3604,40 @@
     "prefix": "class=>inheritance_2",
     "body": [
       "class SchoolMember:",
-      "    '''Represents any school member.'''",
-      "    def __init__(self, name, age):",
-      "        self.name = name",
-      "        self.age = age",
-      "        print('(Initialized SchoolMember: {})'.format(self.name))",
-      "    def tell(self):",
-      "        '''Tell my details.'''",
-      "        print('Name:{} Age:{}'.format(self.name, self.age), end=' ')",
+      "\t'''Represents any school member.'''",
+      "\tdef __init__(self, name, age):",
+      "\t\tself.name = name",
+      "\t\tself.age = age",
+      "\t\tprint('(Initialized SchoolMember: {})'.format(self.name))",
+      "\tdef tell(self):",
+      "\t\t'''Tell my details.'''",
+      "\t\tprint('Name:{} Age:{}'.format(self.name, self.age), end=' ')",
       "class Teacher(SchoolMember):",
-      "    '''Represents a teacher.'''",
-      "    def __init__(self, name, age, salary):",
-      "        SchoolMember.__init__(self, name, age)",
-      "        self.salary = salary",
-      "        print('(Initialized Teacher: {})'.format(self.name))",
-      "    def tell(self):",
-      "        SchoolMember.tell(self)",
-      "        print('Salary: {:d}'.format(self.salary))",
+      "\t'''Represents a teacher.'''",
+      "\tdef __init__(self, name, age, salary):",
+      "\t\tSchoolMember.__init__(self, name, age)",
+      "\t\tself.salary = salary",
+      "\t\tprint('(Initialized Teacher: {})'.format(self.name))",
+      "\tdef tell(self):",
+      "\t\tSchoolMember.tell(self)",
+      "\t\tprint('Salary: {:d}'.format(self.salary))",
       "class Student(SchoolMember):",
-      "    '''Represents a student.'''",
-      "    def __init__(self, name, age, marks):",
-      "        SchoolMember.__init__(self, name, age)",
-      "        self.marks = marks",
-      "        print('(Initialized Student: {})'.format(self.name))",
-      "    def tell(self):",
-      "        SchoolMember.tell(self)",
-      "        print('Marks: {:d}'.format(self.marks))",
+      "\t'''Represents a student.'''",
+      "\tdef __init__(self, name, age, marks):",
+      "\t\tSchoolMember.__init__(self, name, age)",
+      "\t\tself.marks = marks",
+      "\t\tprint('(Initialized Student: {})'.format(self.name))",
+      "\tdef tell(self):",
+      "\t\tSchoolMember.tell(self)",
+      "\t\tprint('Marks: {:d}'.format(self.marks))",
       "t = Teacher('Mrs. Shrividya', 40, 30000)",
       "s = Student('Swaroop', 25, 75)",
       "# prints a blank line",
       "print()",
       "members = [t, s]",
       "for member in members:",
-      "    # Works for both Teachers and Students",
-      "    member.tell()"
+      "\t# Works for both Teachers and Students",
+      "\tmember.tell()"
     ],
     "description": "oop inheritance example"
   },
@@ -3647,12 +3647,12 @@
       "class Parrot:",
       "",
       "# class attribute",
-      " species = 'bird'",
+      "\tspecies = 'bird'",
       "",
       "# instance attribute",
-      " def __init__(self, name, age):",
-      "    self.name = name",
-      "    self.age = age",
+      "\tdef __init__(self, name, age):",
+      "\t\tself.name = name",
+      "\t\tself.age = age",
       "",
       "# instantiate the Parrot class",
       "blu = Parrot('Blu', 10)",
@@ -3671,10 +3671,10 @@
     "prefix": "class=>with_attribute_2",
     "body": [
       "class Person:",
-      "    def __init__(self, name):",
-      "        self.name = name",
-      "    def say_hi(self):",
-      "        print('Hello, my name is', self.name)",
+      "\tdef __init__(self, name):",
+      "\t\tself.name = name",
+      "\tdef say_hi(self):",
+      "\t\tprint('Hello, my name is', self.name)",
       "p = Person('Swaroop')",
       "p.say_hi()",
       "# The previous 2 lines can also be written as",
@@ -3686,33 +3686,33 @@
     "prefix": "class=>with_attribute_3",
     "body": [
       "class Robot:",
-      "    '''Represents a robot, with a name.'''",
-      "    # A class variable, counting the number of robots",
-      "    population = 0",
-      "    def __init__(self, name):",
-      "        '''Initializes the data.'''",
-      "        self.name = name",
-      "        print('(Initializing {})'.format(self.name))",
-      "        # When this person is created, the robot",
-      "        # adds to the population",
-      "        Robot.population += 1",
-      "    def die(self):",
-      "        '''I am dying.'''",
-      "        print('{} is being destroyed!'.format(self.name))",
-      "        Robot.population -= 1",
-      "        if Robot.population == 0:",
-      "            print('{} was the last one.'.format(self.name))",
-      "        else:",
-      "            print('There are still {:d} robots working.'.format(",
-      "                Robot.population))",
-      "    def say_hi(self):",
-      "        '''Greeting by the robot.",
-      "        Yeah, they can do that.'''",
-      "        print('Greetings, my masters call me {}.'.format(self.name))",
-      "    @classmethod",
-      "    def how_many(cls):",
-      "        '''Prints the current population.'''",
-      "        print('We have {:d} robots.'.format(cls.population))",
+      "\t'''Represents a robot, with a name.'''",
+      "\t# A class variable, counting the number of robots",
+      "\tpopulation = 0",
+      "\tdef __init__(self, name):",
+      "\t\t'''Initializes the data.'''",
+      "\t\tself.name = name",
+      "\t\tprint('(Initializing {})'.format(self.name))",
+      "\t\t# When this person is created, the robot",
+      "\t\t# adds to the population",
+      "\t\tRobot.population += 1",
+      "\tdef die(self):",
+      "\t\t'''I am dying.'''",
+      "\t\tprint('{} is being destroyed!'.format(self.name))",
+      "\t\tRobot.population -= 1",
+      "\t\tif Robot.population == 0:",
+      "\t\t\tprint('{} was the last one.'.format(self.name))",
+      "\t\telse:",
+      "\t\t\tprint('There are still {:d} robots working.'.format(",
+      "\t\t\t\tRobot.population))",
+      "\tdef say_hi(self):",
+      "\t\t'''Greeting by the robot.",
+      "\t\tYeah, they can do that.'''",
+      "\t\tprint('Greetings, my masters call me {}.'.format(self.name))",
+      "\t@classmethod",
+      "\tdef how_many(cls):",
+      "\t\t'''Prints the current population.'''",
+      "\t\tprint('We have {:d} robots.'.format(cls.population))",
       "droid1 = Robot('R2-D2')",
       "droid1.say_hi()",
       "Robot.how_many()",
@@ -3733,16 +3733,16 @@
       "class Parrot:",
       "",
       "# instance attributes",
-      " def __init__(self, name, age):",
-      "   self.name = name",
-      "   self.age = age",
+      "\tdef __init__(self, name, age):",
+      "\t\tself.name = name",
+      "\t\tself.age = age",
       "",
       "# instance method",
-      " def sing(self, song):",
-      "   return '{} sings {}'.format(self.name, song)",
+      "\tdef sing(self, song):",
+      "\t\treturn '{} sings {}'.format(self.name, song)",
       "",
-      " def dance(self):",
-      "   return '{} is now dancing'.format(self.name)",
+      "\tdef dance(self):",
+      "\t\treturn '{} is now dancing'.format(self.name)",
       "",
       "# instantiate the object",
       "blu = Parrot('Blu', 10)",
@@ -3756,8 +3756,8 @@
     "prefix": "class=>with_method_2",
     "body": [
       "class Person:",
-      "    def say_hi(self):",
-      "        print('Hello, how are you?')",
+      "\tdef say_hi(self):",
+      "\t\tprint('Hello, how are you?')",
       "p = Person()",
       "p.say_hi()",
       "# The previous 2 lines can also be written as",
@@ -3770,14 +3770,14 @@
     "body": [
       "class Computer:",
       "",
-      " def __init__(self):",
-      "   self.__maxprice = 900",
+      "\tdef __init__(self):",
+      "\t\tself.__maxprice = 900",
       "",
-      " def sell(self):",
-      "   print('Selling Price: {}'.format(self.__maxprice))",
+      "\tdef sell(self):",
+      "\t\tprint('Selling Price: {}'.format(self.__maxprice))",
       "",
-      " def setMaxPrice(self, price):",
-      "   self.__maxprice = price",
+      "\tdef setMaxPrice(self, price):",
+      "\t\tself.__maxprice = price",
       "",
       "c = Computer()",
       "c.sell()",
@@ -3797,23 +3797,23 @@
     "body": [
       "class Parrot:",
       "",
-      " def fly(self):",
-      "   print('Parrot can fly')",
+      "\tdef fly(self):",
+      "\t\tprint('Parrot can fly')",
       "",
-      " def swim(self):",
-      "   print('Parrot can not swim')",
+      "\tdef swim(self):",
+      "\t\tprint('Parrot can not swim')",
       "",
       "class Penguin:",
       "",
-      " def fly(self):",
-      "   print('Penguin can not fly')",
+      "\tdef fly(self):",
+      "\t\tprint('Penguin can not fly')",
       "",
-      " def swim(self):",
-      "   print('Penguin can swim')",
+      "\tdef swim(self):",
+      "\t\tprint('Penguin can swim')",
       "",
       "# common interface",
       "def flying_test(bird):",
-      "  bird.fly()",
+      "\tbird.fly()",
       "",
       "#instantiate objects",
       "blu = Parrot()",
@@ -3830,23 +3830,23 @@
     "body": [
       "class Parrot:",
       "",
-      " def fly(self):",
-      "   print('Parrot can fly')",
+      "\tdef fly(self):",
+      "\t\tprint('Parrot can fly')",
       "",
-      " def swim(self):",
-      "   print('Parrot can not swim')",
+      "\tdef swim(self):",
+      "\t\tprint('Parrot can not swim')",
       "",
       "class Penguin:",
       "",
-      " def fly(self):",
-      "   print('Penguin can not fly')",
+      "\tdef fly(self):",
+      "\t\tprint('Penguin can not fly')",
       "",
-      " def swim(self):",
-      "   print('Penguin can swim')",
+      "\tdef swim(self):",
+      "\t\tprint('Penguin can swim')",
       "",
       "# common interface",
       "def flying_test(bird):",
-      "  bird.fly()",
+      "\tbird.fly()",
       "",
       "#instantiate objects",
       "blu = Parrot()",
