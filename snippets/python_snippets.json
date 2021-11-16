@@ -923,8 +923,18 @@
     ],
     "description": "An example for using pow"
   },
+  "self": {
+    "prefix": "self",
+    "body": "self.$0",
+    "description": "Shortend snippet to reference the self property in an object."
+  },
   "print": {
     "prefix": "print",
+    "body": "print(\"${1:}\")$0",
+    "description": "Code snippet for the if statement."
+  },
+  "print=>": {
+    "prefix": "print=>",
     "body": "print(object(s), separator=separator, end=end, file=file, flush=flush)",
     "description": "Prints to the standard output device"
   },
@@ -1266,55 +1276,32 @@
   },
   "if": {
     "prefix": "if",
-    "body": [
-      "if condition:",
-      "  pass"
-    ],
+    "body": "if (${1:}):\n\t${2:#comment: }\n#END IF$0",
     "description": "if Statements"
   },
   "ifelif": {
     "prefix": "ifelif",
-    "body": [
-      "if condition:",
-      "  pass",
-      "elif condition:",
-      "  pass"
-    ],
-    "description": "if/else if Statements"
+    "body": "if (${1:}):\n\t${2:#comment: }\nelif (${3:}):\n\t${4:#comment: }\n#END IF$0",
+    "description": "if/elif Statements"
   },
   "ifelifelse": {
     "prefix": "ifelifelse",
-    "body": [
-      "if condition:",
-      "  pass",
-      "elif condition:",
-      "  pass",
-      "else:",
-      "  pass"
-    ],
-    "description": "if/else if/else Statements"
+    "body": "if (${1:}):\n\t${2:#comment: }\nelif (${3:}):\n\t${4:#comment: }\nelse:\n\t${5:#comment: }\n#END IF$0",
+    "description": "if/elif/else Statements"
   },
   "ifel": {
     "prefix": "ifelse",
-    "body": [
-      "if condition:",
-      "  pass",
-      "else:",
-      "  pass"
-    ],
+    "body": "if (${1:}):\n\t${2:#comment: }\nelse:\n\t${3:#comment: }\n#END IF$0",
     "description": "if/else Statements"
   },
   "elif": {
     "prefix": "else",
-    "body": [
-      "else:",
-      "  pass"
-    ],
+    "body": "else:\n\t${1:#comment: }$0",
     "description": "else Statements"
   },
   "ifshort": {
     "prefix": "ifshort",
-    "body": "print('A') if a > b else print('A')",
+    "body": "print('A') if a > b else print('B')",
     "description": "ifshort Statements"
   },
   "lambda": {
@@ -1330,14 +1317,25 @@
     ],
     "description": "for Statements"
   },
-  "for=>": {
-    "prefix": "for=>",
-    "body": [
-      "fruits = ['apple', 'banana', 'cherry']",
-      "for x in fruits:",
-      "  print(x)"
-    ],
-    "description": "An example for using for"
+  "for": {
+    "prefix": "for",
+    "body": "for ${1:value} in ${2:iterable}:\n\t${3:#comment: }$0",
+    "description": "Code snippet to create a for loop structure."
+  },
+  "for-range(Amount)": {
+    "prefix": "for(Amount)",
+    "body": "for ${1:value} in range(${2:}):\n\t${3:#comment: }\n#END FOR$0",
+    "description": "value = 0,1,2 [for value in range(3)]"
+  },
+  "for-range(Begin, ExclusiveEnd)": {
+    "prefix": "for(Begin, End)",
+    "body": "for ${1:value} in range(${2:}, ${3:}):\n\t${4:#comment: }\n#END FOR$0",
+    "description": "value = 1,2 [for value in range(1, 3)]"
+  },
+  "for-range(Begin, ExclusiveEnd, IncrementBy)": {
+    "prefix": "for(IncrementBy)",
+    "body": "for ${1:value} in range(${2:}, ${3:}, ${4:}):\n\t${5:#comment: }\n#END FOR$0",
+    "description": "value = 3,2,1 [for value in range(3, 0, -1)]"
   },
   "for=>through_a_string": {
     "prefix": "for=>through_a_string",
@@ -1417,11 +1415,8 @@
   },
   "while": {
     "prefix": "while",
-    "body": [
-      "while expression:",
-      "  pass"
-    ],
-    "description": "while Statements"
+    "body": "while (${1:}):\n\t${2:#comment: }\n#END WHILE$0",
+    "description": "Code snippet to create a while loop structure."
   },
   "while_else": {
     "prefix": "while_else",
@@ -3482,6 +3477,26 @@
     "prefix": "import=>",
     "body": "import mymodule as mx",
     "description": "import module"
+  },
+  "try:except:": {
+    "prefix": "try",
+    "body": "try:\n\t${1:#comment: }\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\n#END TRY$0",
+    "description": "Code Snippet for a try and except blocks."
+  },
+  "try:except:else:finally": {
+    "prefix": "tryef",
+    "body": "try:\n\t${1:#comment: }\nexcept${2: ${3:Exception} as ${4:e}}:\n\t${5:raise}\nelse:\n\t${6:#comment: }\nfinally:\n\t${7:#comment: }\n#END TRY$0",
+    "description": "Code Snippet for a try/except/finally with else statement."
+  },
+  "try:except:else": {
+    "prefix": "trye",
+    "body": "try:\n\t${1:#comment: }\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nelse:\n\t${5:#comment: }\n#END TRY$0",
+    "description": "Code Snippet for a try/except with else statement."
+  },
+  "try:except:finally": {
+    "prefix": "tryf",
+    "body": "try:\n\t${1:#comment: }\nexcept ${2:Exception} as ${3:e}:\n\t${4:raise $3}\nfinally:\n\t${5:#comment: }\n#END TRY$0",
+    "description": "Code Snippet for a try/except/finally."
   },
   "tryexcept": {
     "prefix": "trye=>",
