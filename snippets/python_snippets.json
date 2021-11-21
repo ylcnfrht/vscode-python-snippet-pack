@@ -533,23 +533,27 @@
   },
   "int": {
     "prefix": "int",
+    "body": "int(\"${1:}\")$0",
+    "description": "typecast string to integer number"
+  },
+  "int(value, base)": {
+    "prefix": "int(\"${1:}\", \"${2:}\")$0",
     "body": "int(value, base)",
-    "description": "Returns an integer number"
+    "description": "Returns base 10 of the base number of second arg"
   },
   "built_in.int=>_1": {
     "prefix": "built_in.int=>_1",
-    "body": [
-      "x = int(3.5)",
-      "print(x)"
-    ],
+    "body": ["x = int(3.5)", "print(x)"],
     "description": "An example for using int"
   },
   "built_in.int=>_2": {
     "prefix": "built_in.int=>_2",
-    "body": [
-      "x = int('12')",
-      "print(x)"
-    ],
+    "body": ["x = int('12')", "print(x)"],
+    "description": "An example for using int"
+  },
+  "built_in.int=>_3": {
+    "prefix": "built_in.int=>_3",
+    "body": ["x = int(\"101\", 2)", "print(x)"],
     "description": "An example for using int"
   },
   "id": {
