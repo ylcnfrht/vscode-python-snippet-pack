@@ -537,9 +537,9 @@
     "description": "typecast string to integer number"
   },
   "int(value, base)": {
-    "prefix": "int(\"${1:}\", \"${2:}\")$0",
-    "body": "int(value, base)",
-    "description": "Returns base 10 of the base number of second arg"
+    "prefix": "int(value, base)",
+    "body": "int(\"${1:}\", \"${2:})$0",
+    "description": "Return base 10 of the base number of second arg"
   },
   "built_in.int=>_1": {
     "prefix": "built_in.int=>_1",
@@ -1215,6 +1215,11 @@
   },
   "type": {
     "prefix": "type",
+    "body": "type(${1:})$0",
+    "description": "Return the type of an object"
+  },
+  "built_in.type": {
+    "prefix": "built_in.type",
     "body": "type(object, bases, dict)",
     "description": "Returns the type of an object"
   },
