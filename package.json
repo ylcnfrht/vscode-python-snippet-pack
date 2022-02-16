@@ -1,12 +1,12 @@
 {
-    "name": "pythonsnippets",
-    "displayName": "python snippets",
+    "name": "pythonsnippetsimproved",
+    "displayName": "python snippets improved",
     "description": "Code snippets for python",
-    "version": "1.0.2",
-    "publisher": "frhtylcn",
+    "version": "1.0.3",
+    "publisher": "submicron13",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ylcnfrht/vscode-python-snippet-pack"
+        "url": "https://github.com/submicron13/vscode-python-snippet-pack"
     },
     "icon": "icon.png",
     "engines": {
