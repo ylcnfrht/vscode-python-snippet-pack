@@ -19,6 +19,10 @@
         "snippets": [{
             "language": "python",
             "path": "./snippets/python_snippets.json"
+        },
+        {
+            "language":"python",
+            "path": "./snippets/PyMySQL_snippets.json"
         }]
     }
 }
