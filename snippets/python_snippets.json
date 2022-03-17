@@ -1487,7 +1487,7 @@
   "def=>with_default_value": {
     "prefix": "def=>with_default_value",
     "body": [
-      "def name(name, lastName='john')",
+      "def name(name, last_name='john'):",
       " pass"
     ],
     "description": "Defining Function wqith default values"
