@@ -645,6 +645,7 @@ Users appreciate release notes as you update your extension.
 * [www.programiz](https://www.programiz.com/python-programming)
 * [python.swaroopch](https://python.swaroopch.com/oop.html)
 * [pythonforbeginners](https://www.pythonforbeginners.com/basics/list-comprehensions-in-python)
+* [InterviewBit](https://www.interviewbit.com/python-cheat-sheet/)
 
 
 **Enjoy!**
